@@ -18,7 +18,6 @@ let testDataFile = files.Head
 let colNames = ["Date"; "event"; "contract"; "lastSize"; "last";
                 "bidSz"; "bid"; "bidSz1"; "bid1"; "bidSz2"; "bid2"; "bidSz3"; "bid3"; "bidSz4"; "bid4";
                 "askSz"; "ask"; "askSz1"; "ask1"; "askSz2"; "ask2"; "askSz3"; "ask3"; "askSz4"; "ask4";]
-
 let header = String.concat ", " colNames 
 
 let GetSortedPaddedSeq (items:seq<string>) =
@@ -44,21 +43,33 @@ let GetSortedPaddedSeq (items:seq<string>) =
         else sorted
     loop Map.empty<string,List<string>>
 
-let writeout date (contract:string) (data:List<string>) = 
+let writeout date (contract:string) data = 
+
     let componets = contract.Split ' ' |> Seq.toList
-    let fName = sprintf "%s_%s_%s.csv" componets.[1] componets.[2] date
-    let csvFilename = Path.Combine (outputPath, fName)
+    let csvFileName = sprintf "%s_%s_%s.csv" componets.[1] componets.[2] date
+    let filePath = Path.Combine (outputPath, csvFileName)
+
+    // reverse data list (old to newest) and output to array
     let outData = data |> List.rev |> List.toArray
     let withHeaders = Array.append [|header|] outData
-    File.WriteAllLines(csvFilename , withHeaders) 
 
-let processFile (file:string) = 
-    let fName = Path.GetFileNameWithoutExtension file
+    // writeout the data
+    File.WriteAllLines(filePath , withHeaders) 
+
+
+let processFile fileName = 
+
+    // parse file name for date
+    let fName = Path.GetFileNameWithoutExtension fileName
     let fileElem = fName.Split (char "-")
     let date = fileElem.[1]
-    let file = File.ReadAllLines(file)
+
+    // read in, parse, padded and sort into map of key = contract, value = data
+    let file = File.ReadAllLines(fileName)
     let sortedPadded = GetSortedPaddedSeq file
-    sortedPadded |> Map.iter (fun (file:string) (data:List<string>) -> writeout date file data)
+
+    // writeout each contract
+    sortedPadded |> Map.iter (fun contract data -> writeout date contract data)
 
 let processTextFiles fs = 
         fs
