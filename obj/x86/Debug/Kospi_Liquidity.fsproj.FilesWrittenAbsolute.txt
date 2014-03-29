@@ -1,0 +1,11 @@
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.fs
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/Kospi_Liquidity.exe.mdb
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/Kospi_Liquidity.exe
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/obj/x86/Debug/Kospi_Liquidity.exe
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/obj/x86/Debug/Kospi_Liquidity.exe.mdb
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/FSharp.Data.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/FSharp.Data.DesignTime.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/Deedle.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/OxyPlot.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/OxyPlot.GtkSharp.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/FSharp.Charting.Gtk.dll

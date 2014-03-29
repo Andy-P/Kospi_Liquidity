@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>FSharp.Charting.Gtk</id>
+    <version>0.90.6</version>
+    <authors>Carl Nolan,  Tomas Petricek</authors>
+    <owners>Carl Nolan,  Tomas Petricek</owners>
+    <licenseUrl>http://github.com/fsharp/FSharp.Charting/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>http://fsharp.github.com/FSharp.Charting</projectUrl>
+    <iconUrl>https://raw.github.com/fsharp/FSharp.Charting/master/misc/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The F# Charting library (FSharp.Charting.AspNet.dll) is an ASP.NET Web Forms build of FSharp.Charting. It is experimental.</description>
+    <summary>A Charting Library for F# (Gtk, cross-platform)</summary>
+    <releaseNotes>Update MacOSX recognition function</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>F# FSharpChart charting plotting visualization Gtk GtkSharp OxyPlot</tags>
+  </metadata>
+</package>
