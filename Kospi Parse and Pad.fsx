@@ -1,10 +1,6 @@
-﻿#I "packages/FSharp.Charting.Gtk.0.90.6"
-#I "packages/Deedle.0.9.12"
-#load "Deedle.fsx"
-
+﻿
 open System
 open System.IO
-open Deedle
 
 let trim (s:string) = s.Trim
 
@@ -18,7 +14,10 @@ let testDataFile = files.Head
 let colNames = ["Date"; "event"; "contract"; "lastSize"; "last";
                 "bidSz"; "bid"; "bidSz1"; "bid1"; "bidSz2"; "bid2"; "bidSz3"; "bid3"; "bidSz4"; "bid4";
                 "askSz"; "ask"; "askSz1"; "ask1"; "askSz2"; "ask2"; "askSz3"; "ask3"; "askSz4"; "ask4";]
-let header = String.concat ", " colNames 
+
+colNames.Length
+let header = String.concat "," colNames 
+
 
 let GetSortedPaddedSeq (items:seq<string>) =
     use e = items.GetEnumerator()
@@ -36,7 +35,7 @@ let GetSortedPaddedSeq (items:seq<string>) =
                         let final = hd @ [ "0"; "0" ] @ tl
                         (final |> List.toArray)
             
-            let commaSeparated = String.concat ", " full 
+            let commaSeparated = String.concat "," full 
             let contractData  = if sorted.ContainsKey contract then sorted.[contract] else List.empty<string>
             let sorted = sorted.Add (contract, commaSeparated :: contractData)
             loop sorted

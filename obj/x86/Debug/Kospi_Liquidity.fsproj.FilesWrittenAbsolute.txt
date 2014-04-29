@@ -9,3 +9,5 @@
 /Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/OxyPlot.dll
 /Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/OxyPlot.GtkSharp.dll
 /Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/FSharp.Charting.Gtk.dll
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/Andre/Projects/Kospi liquidity model/Kospi_Liquidity/bin/Debug/FSharpx.Core.dll

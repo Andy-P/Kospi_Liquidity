@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Kospi By Contract">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bid Offer Distributions.fsx">
     <Files>
-      <File FileName="Kospi Parse and Pad.fsx" Line="1" Column="1" />
-      <File FileName="Kospi By Contract" Line="7" Column="15" />
-      <File FileName="../../Fsharp.ScratchPad/Fsharp.ScratchPad/Deedle_Tests.fsx" Line="1" Column="1" />
+      <File FileName="Bid Offer Distributions.fsx" Line="134" Column="12" />
+      <File FileName="PriceNode Parse.fsx" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
